@@ -1,2 +1,2 @@
-# spilly-train
+# github repo: spilly-train
 misc scripts for when the inevitable finally happens
