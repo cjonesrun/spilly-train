@@ -27,3 +27,8 @@ sudo mv $DATE.log $LOG
 
 popd
 rm -rf $DIR
+
+# update the dns service in the event that my ip changes...
+curl https://strongdns.com/ipupdater/dqtiBHksSRCVbYWNmL1zXhfDnaw6u274
+
+sudo /etc/init.d/dnsmasq restart
