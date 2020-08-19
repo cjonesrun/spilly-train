@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # references: 
-https://github.com/Fusl/opennic-resolvconf-update
+# https://github.com/Fusl/opennic-resolvconf-update
 # https://github.com/kewlfft/opennic-up
 
 set -x
