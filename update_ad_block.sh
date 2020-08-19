@@ -2,6 +2,9 @@
 
 set -x
 
+# source in the strong dns url (contains api key)
+. /home/pi/spilly-train/strongdns_update_url.properties
+
 DATE=`date +"%Y-%m-%d"`
 DIR="/tmp/adblock_update"
 OUTPUT="$DIR/hosts.$DATE"
@@ -22,13 +25,16 @@ sudo cp $DIR/hosts /etc
 sudo chown root:root /etc/hosts
 
 cat $LOG > $DATE.log
-echo "`date` updated /etc/hosts from $URL" >> $DATE.log
+echo "[`date`] updated /etc/hosts from $URL" >> $DATE.log
+
+# update the dns service in the event that my ip changes...
+echo "[`date`] updating ip at $DNS_SERVICE_URL" >> $DATE.log
+OUTPUT=`curl $DNS_SERVICE_URL`
+echo "[`date`] $OUTPUT" >> $DATE.log
+
 sudo mv $DATE.log $LOG
 
 popd
 rm -rf $DIR
-
-# update the dns service in the event that my ip changes...
-curl https://strongdns.com/ipupdater/dqtiBHksSRCVbYWNmL1zXhfDnaw6u274
 
 sudo /etc/init.d/dnsmasq restart
