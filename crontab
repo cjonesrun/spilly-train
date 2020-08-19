@@ -3,7 +3,7 @@
 @reboot sudo /home/pi/spilly-train/check_internet_access.sh
 
 # every 5 minutes
-*/5 * * * * /home/pi/spilly-train/freedns_update.sh
+*/5 * * * * /home/pi/spilly-train/update_dns_services.sh
 
 # every morning at 1am
 0 1 * * * /home/pi/spilly-train/update_ad_block.sh
