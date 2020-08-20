@@ -2,8 +2,8 @@
 #FreeDNS and StrongDNS update script
 
 set -x
-. /home/pi/freedns.apikey
-. /home/pi/strongdns_update_url.key
+. /home/pi/conf/freedns.apikey
+. /home/pi/conf/strongdns_update_url.key
 
 LOG1=/var/log/freedns_update.log
 TMPLOG1=/tmp/tmp1.log
