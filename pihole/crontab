@@ -1,0 +1,9 @@
+# add these entries using crontab -e
+
+@reboot sudo /home/pi/spilly-train/check_internet_access.sh
+
+# every monday at 2am
+0 2 * * 1 /home/pi/spilly-train/pihole/update_dns_servers.sh
+
+# every 5 minutes
+*/5 * * * * /home/pi/spilly-train/update_dns_services.sh

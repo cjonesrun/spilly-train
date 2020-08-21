@@ -1,0 +1,10 @@
+updating adlists, whitelists and blacklists
+see: https://github.com/jacklul/pihole-updatelists
+
+config: /etc/pihole-updatelists.conf
+
+to manually update
+sudo pihole-updatelists
+
+peridocally runs:
+sudo systemctl edit pihole-updatelists.timer
