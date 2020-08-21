@@ -1,14 +1,14 @@
-Upstream DNS Servers:
+- Upstream DNS Servers:
 see ~/pihole/update_dns_servers.sh, crontab -e 
 
 List of upstream DNS servers is loaded from:
 https://api.opennicproject.org/geoip/?bare&ipv=4&res=100000"
 copied to: /etc/dnsmasq.d/03-pihole-upstream-dns-servers.conf
 
-Pi-Hole: 
+- Pi-Hole: 
 https://github.com/pi-hole/pi-hole
 
-Adlists/Whitelists/Blacklists:
+- Adlists/Whitelists/Blacklists:
 updating adlists, whitelists and blacklists
 see: https://github.com/jacklul/pihole-updatelists
 
