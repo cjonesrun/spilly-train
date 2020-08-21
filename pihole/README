@@ -5,7 +5,6 @@ List of upstream DNS servers is loaded from:
 https://api.opennicproject.org/geoip/?bare&ipv=4&res=100000"
 copied to: /etc/dnsmasq.d/03-pihole-upstream-dns-servers.conf
 
-
 Pi-Hole: 
 https://github.com/pi-hole/pi-hole
 
