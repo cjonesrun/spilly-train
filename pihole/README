@@ -11,6 +11,9 @@ https://github.com/pi-hole/pi-hole
 
 
 - Adlists/Whitelists/Blacklists:
+
+https://practical-admin.com/blog/my-pi-hole-configuration/
+
 updating adlists, whitelists and blacklists
 see: https://github.com/jacklul/pihole-updatelists
 
