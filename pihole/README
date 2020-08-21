@@ -1,3 +1,7 @@
+pihole: 
+https://github.com/pi-hole/pi-hole
+
+
 updating adlists, whitelists and blacklists
 see: https://github.com/jacklul/pihole-updatelists
 
