@@ -27,7 +27,7 @@ sudo cp $OUTPUT $TARGET_DIR
 
 cat $LOG > $DATE.log
 echo "`date` updated $TARGET_DIR/$CONF from $URL" >> $DATE.log
-
+cat $OUTPUT >> $DATE.log
 
 echo "`date` restarting pi-hole" >> $DATE.log
 sudo systemctl restart pihole-FTL.service
