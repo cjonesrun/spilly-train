@@ -1,0 +1,4 @@
+sudo cp /home/pi/spilly-train/pihole/logrotate.d/pihole /etc/logrotate.d/
+
+
+sudo logrotate --force /etc/logrotate.d/pihole
