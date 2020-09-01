@@ -1,5 +1,5 @@
 #!/bin/bash
-#FreeDNS and StrongDNS update script
+# Update myip with FreeDNS and StrongDNS update script
 
 set -x
 . /home/pi/conf/freedns.apikey

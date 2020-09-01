@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# NOT USED ANYMORE
 set -x
 
 DATE=`date +"%Y-%m-%d"`

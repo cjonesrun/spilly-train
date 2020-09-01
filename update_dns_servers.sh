@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# get 20+ dns servers from open nic project and drop them into /etc/dnsmasq.d/00*
+# get 20+ dns servers from open nic project and drop them into /etc/dnsmasq.d/*.conf
 #
 # references: 
 # https://github.com/Fusl/opennic-resolvconf-update
