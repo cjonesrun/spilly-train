@@ -1,0 +1,29 @@
+/var/log/dns_opennic_update.log {
+	monthly
+	rotate 5
+	compress
+	delaycompress
+	missingok
+	notifempty
+	create 644 pi root
+}
+
+/var/log/freedns_update.log {
+    monthly
+    rotate 5
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 644 pi root
+}
+
+/var/log/strongdns_update.log {
+    monthly
+    rotate 5
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 644 pi root
+}
