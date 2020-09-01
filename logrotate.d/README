@@ -1,4 +1,5 @@
+# install the logrotate conf
 sudo cp /home/pi/spilly-train/pihole/logrotate.d/pihole /etc/logrotate.d/
 
-
+# force run it
 sudo logrotate --force /etc/logrotate.d/pihole

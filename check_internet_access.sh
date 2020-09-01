@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # checks internet from inside
+# set -x
+
+# source conf variable
+. /home/pi/conf/ping.conf
 
 INTERNET_STATUS="UNKNOWN"
 TIMESTAMP=`date +%s`
@@ -8,7 +12,7 @@ LOG="/var/log/check-internet-up-down.log"
 
 while [ 1 ]
  do
-    ping -c 1 -W 3 208.67.220.220 > /dev/null 2>&1
+    ping -c 1 -W 3 $PING > /dev/null 2>&1
     if [ $? -eq 0 ] ; then
         if [ "$INTERNET_STATUS" != "UP" ]; then
 	    #DIFF=$((`date +%s`-$TIMESTAMP))
