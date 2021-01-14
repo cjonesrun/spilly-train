@@ -1,3 +1,9 @@
+update dns service ips:
+change all the conf files in:
+/etc/dnsmasq.d/
+eg. /etc/dnsmasq.d/55-nhl.conf
+
+
 - Upstream DNS Servers:
 see ~/pihole/update_dns_servers.sh, crontab -e 
 
