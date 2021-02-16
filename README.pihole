@@ -1,4 +1,5 @@
 - Update dns service (unblockus/strongdns/etc) ips:
+
 change all the conf files in:
 /etc/dnsmasq.d/
 eg. /etc/dnsmasq.d/55-nhl.conf
