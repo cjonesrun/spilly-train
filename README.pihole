@@ -1,3 +1,8 @@
+Update the pihole subsystems:
+pihole -up --check-only
+then
+pihole -up
+
 - Update dns service (unblockus/strongdns/etc) ips:
 
 change all the conf files in:
